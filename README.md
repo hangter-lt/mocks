@@ -1,6 +1,7 @@
 # Mock API 服务平台
 
 ## 项目介绍
+<img width="2560" height="1391" alt="无标题" src="https://github.com/user-attachments/assets/d782baa0-2825-4675-9445-2192130e5850" />
 
 Mocks 服务平台是一个轻量级的接口模拟服务，提供可视化的接口mock数据审查功能，并支持通过模块化方式快速增加新的mock接口。该平台采用Flask作为Web框架，实现了自动模块发现和加载机制，便于快速开发和集成新的API模拟功能。
 
@@ -113,6 +114,7 @@ gunicorn -w 4 -b 0.0.0.0:5000 wsgi:app
 ```
 3. 根据AI输出的结果微调
 4. 放入`app/modules/[模块名称]`
+<img width="856" height="752" alt="AI" src="https://github.com/user-attachments/assets/8893c2b2-ed10-47d7-8e89-32961eb7e0f7" />
 
 
 ### 1. 模块结构规范
