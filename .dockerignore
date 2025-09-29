@@ -1,0 +1,47 @@
+# 排除虚拟环境目录（这是关键！避免复制本地的venv到容器中）
+venv/
+
+# 排除构建目录
+build/
+run.build/
+
+# 排除打包目录
+dist/
+run.dist/
+
+# 排除临时文件和缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 排除IDE配置文件
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 排除日志文件
+*.log
+
+# 排除数据库文件
+*.db
+
+# 排除docker-compose.yml（仅用于开发环境，不需要复制到容器中）
+docker-compose.yml
+
+# 排除文档文件
+*.md
+
+# 排除压缩文件
+*.tar.gz
+*.zip
+
+# 排除操作系统文件
+.DS_Store
+Thumbs.db
+
+# 排除其他不需要的文件和目录
+*.spec
+
+# 注意：Dockerfile和.dockerignore文件会自动被Docker排除，不需要手动添加
+# 系统会保留requirements.txt和其他必要的应用程序文件
